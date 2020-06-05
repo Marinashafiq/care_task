@@ -1,9 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export const SideMenu = () => {
-    return(
-        <>
-           Side Menu 
-        </>
-    )
-}
+  return <>Side Menu</>;
+};
