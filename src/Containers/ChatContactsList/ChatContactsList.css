@@ -1,0 +1,10 @@
+.contacts_list_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aaaaaa;
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
