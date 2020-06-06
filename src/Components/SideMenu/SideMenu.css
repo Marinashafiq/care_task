@@ -1,0 +1,30 @@
+.side_menu {
+  height: 100vh;
+  background-color: #5cafb5;
+}
+.side_menu .logo_container {
+  text-align: center;
+}
+.side_menu .logo_container .logo {
+  height: 3em;
+  margin-top: 1em;
+}
+.side_menu .side_menu_list {
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+.side_menu .side_menu_list .side_menu_item {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-top: 1em;
+}
+.side_menu .side_menu_list .side_menu_item:hover {
+  background-color: #79c4ca;
+}
+.side_menu .side_menu_list .side_menu_item:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 6%;
+}
