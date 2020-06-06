@@ -1,3 +1,4 @@
+// Array for rendered contacts list
 export const chatContactsList = [
   {
     is_group: true,
@@ -98,6 +99,7 @@ export const chatContactsList = [
   },
 ];
 
+// Array for chat messages
 export const chatMessages = [
   {
     isSender: true,

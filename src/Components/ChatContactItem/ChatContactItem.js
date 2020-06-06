@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import "./ChatContactItem.css";
 
+
+// Each single contact in list
 export const ChatContactItem = ({ chatContactData }) => {
   return (
     <div className="contact_list_item">
@@ -30,6 +32,7 @@ export const ChatContactItem = ({ chatContactData }) => {
       </div>
       <div>
           <small>{chatContactData.date}</small>
+          {/* hide notifications chip if number is 0 */}
           {chatContactData.notification_number > 0 && <Chip content={chatContactData.notification_number}/>}
       </div>
     </div>

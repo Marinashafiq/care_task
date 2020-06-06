@@ -6,6 +6,7 @@ import { Input } from "../Controls/Input/Input";
 import { IconButton } from "../Controls/IconButton/IconButton";
 import "./ChatActionBar.css";
 
+// Chat footer for sending messages
 export const ChatActionBar = () => {
   return (
     <div className="chat_actions">
