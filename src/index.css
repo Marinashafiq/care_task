@@ -13,11 +13,15 @@ code {
     monospace;
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 , p , small , strong {
+h1 , h2 , h3 , h4 , h5 , h6 , p , small , strong , span{
   color : #546566;
   margin: 0;
 }
 
 .text_white {
   color: white;
+}
+
+.spacing {
+  margin : 0 1em;
 }

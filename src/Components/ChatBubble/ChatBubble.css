@@ -30,8 +30,8 @@
 .chat_message .user_profile {
     object-fit: cover;
     border-radius: 50%;
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     align-self: flex-end;
 }
 
@@ -39,6 +39,38 @@
     display: flex;
     justify-content: space-between;
     margin : 0 1em 0 1em;
+}
+
+.chat_message .reminder_item {
+    display: flex;
+    margin : 1em 0em
+}
+
+.chat_message .status_container{
+    background-color: white;
+    padding: 0.5em 2em;
+    color: #e88282;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.chat_message .reminder_actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat_message .reminder_actions .reminder_actions_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.danger_color {
+    color: #e88282;
+}
+
+.chat_message .reminder_item .reminder_content{
+    margin:  0 0 0 0.5em;
+    align-self: center;
 }
 
 .chat_message.sender {
