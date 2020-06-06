@@ -20,11 +20,11 @@
   padding-bottom: 1.5em;
   margin-top: 1em;
 }
-.side_menu .side_menu_list .side_menu_item:hover {
+.side_menu .side_menu_list .side_menu_item:hover  , .side_menu .side_menu_list .side_menu_item.active{
   background-color: #79c4ca;
 }
 .side_menu .side_menu_list .side_menu_item:last-child {
     position: absolute;
     bottom: 0;
-    width: 6%;
+    width: 5%;
 }

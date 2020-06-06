@@ -16,7 +16,7 @@ export const SideMenu = () => {
         <img className="logo" src={logo} alt={"logo"} />
       </div>
       <ul className="side_menu_list">
-        <li className="side_menu_item">
+        <li className="side_menu_item active">
           <FontAwesomeIcon icon={faComments} size="2x" color="white" />
         </li>
         <li className="side_menu_item">
