@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/environment.svg";
+import logo from "../../assets/images/logo.png";
 import "./SideMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
