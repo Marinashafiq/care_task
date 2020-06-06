@@ -25,6 +25,18 @@
     width: 4em;
 }
 
+.contact_list_item .contact_item_data .image_placeholder{
+    background-color: #ecf2f2;
+    border-radius: 50%;
+    padding: 1.5em;
+    color: white;
+    font-size: 1em;
+}
+
+.contact_list_item .contact_item_data .image_placeholder.notificaton_border {
+    border: 4px solid #608a8b;
+}
+
 .contact_list_item .contact_item_data .contact_data_left {
     margin-left: 0.5em;
 }
