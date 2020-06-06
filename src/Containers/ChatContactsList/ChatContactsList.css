@@ -9,7 +9,12 @@
     color: white;
 }
 
+.contact_list .contacts_list_header .icon_size{
+    font-size: 20px;
+}
+
 .contact_list .contact_list_container {
-    height: 88vh;
+    height: 88.5vh;
     overflow: auto;
 }
+

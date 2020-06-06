@@ -16,7 +16,7 @@ export default class ChatContactsList extends Component {
       <div className="contact_list">
         <div className="contacts_list_header">
           <h3 className="text_white">Conversations</h3>
-          <FontAwesomeIcon icon={faComment} size="2x" color="white" />
+          <FontAwesomeIcon icon={faComment} className="icon_size" color="white" />
         </div>
         <div className="contact_list_container">
           {this.renderChatContactList(chatContactsList)}

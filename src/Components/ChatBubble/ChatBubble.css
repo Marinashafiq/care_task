@@ -32,12 +32,25 @@
     border-radius: 50%;
     height: 4em;
     width: 4em;
-    position: relative;
-    top: 4em;
+    align-self: flex-end;
 }
 
 .chat_message .message_container .message_info {
     display: flex;
     justify-content: space-between;
     margin : 0 1em 0 1em;
+}
+
+.chat_message.sender {
+    justify-content: flex-end;
+}
+
+.chat_message.sender .chat_bubble::before{
+    content:"";
+    position: absolute;
+    right: -1.2em;
+    left: auto;
+    bottom: 0;
+    border-radius: 20px 0 20px;
+    transform: rotate(225deg);
 }
