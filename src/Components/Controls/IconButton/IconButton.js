@@ -1,9 +1,10 @@
 import React from "react";
+import './IconButton.css';
 
-export const IconButton = ({ icon }) => {
+export const IconButton = ({ icon , classes }) => {
   return (
-    <button>
-      <img src={icon} />
+    <button className={`icon_btn ${classes}`}>
+      {icon}
     </button>
   );
 };

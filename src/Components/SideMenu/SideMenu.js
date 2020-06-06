@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../../assets/images/environment.svg";
+import logo from "../../assets/images/logo.png";
+import "./SideMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCog,
@@ -7,7 +8,6 @@ import {
   faUser,
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import "./SideMenu.css";
 
 export const SideMenu = () => {
   return (
@@ -16,7 +16,7 @@ export const SideMenu = () => {
         <img className="logo" src={logo} alt={"logo"} />
       </div>
       <ul className="side_menu_list">
-        <li className="side_menu_item">
+        <li className="side_menu_item active">
           <FontAwesomeIcon icon={faComments} size="2x" color="white" />
         </li>
         <li className="side_menu_item">

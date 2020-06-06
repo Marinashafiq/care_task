@@ -1,0 +1,20 @@
+.contact_list .contacts_list_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aaaaaa;
+    padding: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    height: 2vh;
+}
+
+.contact_list .contacts_list_header .icon_size{
+    font-size: 20px;
+}
+
+.contact_list .contact_list_container {
+    height: 90vh;
+    overflow-y: auto;
+}
