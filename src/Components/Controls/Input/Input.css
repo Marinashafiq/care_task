@@ -1,6 +1,7 @@
-.input{
+.input , .input:focus ,  .input:active{
     background-color: white;
     border: none;
     width: 100%;
     border-radius: 5px;
+    outline: none;
 }

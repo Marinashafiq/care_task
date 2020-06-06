@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-regular-svg-icons";
 import { ChatContactItem } from "../../Components/ChatContactItem/ChatContactItem";
 import { chatContactsList } from "../../utlis/shared";
+import { Scrollbars } from "react-custom-scrollbars";
 import "./ChatContactsList.css";
 export default class ChatContactsList extends Component {
   renderChatContactList = (chatListArr) => {
@@ -16,10 +17,16 @@ export default class ChatContactsList extends Component {
       <div className="contact_list">
         <div className="contacts_list_header">
           <h3 className="text_white">Conversations</h3>
-          <FontAwesomeIcon icon={faComment} className="icon_size" color="white" />
+          <FontAwesomeIcon
+            icon={faComment}
+            className="icon_size"
+            color="white"
+          />
         </div>
         <div className="contact_list_container">
-          {this.renderChatContactList(chatContactsList)}
+          <Scrollbars>
+            {this.renderChatContactList(chatContactsList)}
+          </Scrollbars>
         </div>
       </div>
     );

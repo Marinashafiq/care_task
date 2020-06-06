@@ -15,6 +15,5 @@
 
 .contact_list .contact_list_container {
     height: 88.5vh;
-    overflow: auto;
+    /* overflow: auto; */
 }
-

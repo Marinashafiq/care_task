@@ -9,6 +9,9 @@
 .contact_list_item:hover{
     background-color: #ecf2f2;
 }
+.contact_list_item:first-child {
+    background-color: #ecf2f2;
+}
 
 .contact_list_item .contact_item_data{
     display: flex;
