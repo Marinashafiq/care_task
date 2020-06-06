@@ -1,0 +1,43 @@
+.chat_message .chat_bubble {
+    position: relative;
+    display : inline-block ;
+    background-color: #f0f3f9;
+    padding: 1em;
+    border-radius: 10px;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+.chat_message .chat_bubble::before{
+    content:"";
+    position: absolute;
+    left: -1em;
+    bottom: 0;
+    border: 0 solid transparent;
+    border-top: 9px solid #f0f3f9;
+    border-radius: 0 20px 0;
+    width: 15px;
+    height: 30px;
+    transform: rotate(145deg);
+}
+
+.chat_message{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.chat_message .user_profile {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    position: relative;
+    top: 4em;
+}
+
+.chat_message .message_container .message_info {
+    display: flex;
+    justify-content: space-between;
+    margin : 0 1em 0 1em;
+}

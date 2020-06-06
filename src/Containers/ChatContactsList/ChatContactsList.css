@@ -1,4 +1,4 @@
-.contacts_list_header {
+.contact_list .contacts_list_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,11 +7,9 @@
     padding-left: 1em;
     padding-right: 1em;
     color: white;
-    position: sticky;
-    top: 0;
 }
 
-.contact_list {
-    height: 100vh;
+.contact_list .contact_list_container {
+    height: 88vh;
     overflow: auto;
 }

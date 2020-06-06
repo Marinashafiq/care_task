@@ -1,0 +1,14 @@
+.chat_container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5cafb5;
+    padding: 1.45em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
+
+.chat_messaging_container {
+    padding: 2em;
+}
