@@ -40,7 +40,6 @@ export default class ChatContainer extends Component {
             <strong>Starter Care Plan created + daily actions added</strong>
             <small className="spacing">12:10p</small>
           </div>
-          {/* <ChatBubble /> */}
           {this.renderMessages()}
         </div>
         <ChatActionBar />
