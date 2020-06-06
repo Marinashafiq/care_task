@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../assets/images/environment.svg";
-import "./SideMenu.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCog,
@@ -8,6 +7,7 @@ import {
   faUser,
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import "./SideMenu.css";
 
 export const SideMenu = () => {
   return (
