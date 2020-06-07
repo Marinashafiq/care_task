@@ -8,7 +8,7 @@ import {
 import { ChatActionBar } from "../../Components/ChatActionBar/ChatActionBar";
 import { IconButton } from "../../Components/Controls/IconButton/IconButton";
 import { chatMessages } from "../../utlis/shared";
-import "./ChatContainer.css";
+import "./ChatContainer.scss";
 import { ChatMessage } from "../../Components/ChatMessage/ChatMessage";
 export default class ChatContainer extends Component {
   renderMessages = () => {
@@ -26,7 +26,7 @@ export default class ChatContainer extends Component {
               icon={<FontAwesomeIcon icon={faUserFriends} color="white" />}
             />
             <IconButton
-              classes="spacing_icons"
+              classes="spacing"
               icon={<FontAwesomeIcon icon={faFilter} color="white" />}
             />
             <IconButton

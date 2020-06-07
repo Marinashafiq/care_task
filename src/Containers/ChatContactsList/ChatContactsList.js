@@ -4,7 +4,7 @@ import { faComment } from "@fortawesome/free-regular-svg-icons";
 import { ChatContactItem } from "../../Components/ChatContactItem/ChatContactItem";
 import { chatContactsList } from "../../utlis/shared";
 import { Scrollbars } from "react-custom-scrollbars";
-import "./ChatContactsList.css";
+import "./ChatContactsList.scss";
 export default class ChatContactsList extends Component {
   renderChatContactList = (chatListArr) => {
     return chatListArr.map((item, index) => {

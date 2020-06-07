@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { SideMenu } from '../../Components/SideMenu/SideMenu';
 import ChatContactsList from '../ChatContactsList/ChatContactsList';
 import ChatContainer from '../ChatContainer/ChatContainer';
-import './MainLayout.css';
+import './MainLayout.scss';
 export default class MainLayout extends Component {
     render(){
         return(

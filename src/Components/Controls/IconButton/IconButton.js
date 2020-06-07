@@ -1,5 +1,5 @@
 import React from "react";
-import './IconButton.css';
+import './IconButton.scss';
 
 export const IconButton = ({ icon , classes }) => {
   return (

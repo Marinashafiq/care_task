@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faListAlt } from "@fortawesome/free-regular-svg-icons";
 import { faCheck, faHistory } from "@fortawesome/free-solid-svg-icons";
-import "./ChatBubble.css";
+import "./ChatBubble.scss";
 // Each chat bubble for sender & receiver with different kinds of bubbles type
 export const ChatBubble = ({ chatMessageContent }) => {
   const renderHistory = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import { Chip } from "../Chip/Chip";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import "./ChatContactItem.css";
+import "./ChatContactItem.scss";
 // Each single contact in list
 export const ChatContactItem = ({ chatContactData }) => {
   return (

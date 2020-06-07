@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-import "./SideMenu.css";
+import "./SideMenu.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCog,

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Chip.css";
+import "./Chip.scss";
 // General component for notifications number chip
 export const Chip = ({ content }) => {
   return (

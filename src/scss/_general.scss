@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+strong,
+span {
+  color: #546566;
+  margin: 0;
+}
+
+.text_white {
+  color: white;
+}
+
+.danger_color {
+  color: #e88282;
+}
+.spacing {
+  margin: 0 1em;
+}

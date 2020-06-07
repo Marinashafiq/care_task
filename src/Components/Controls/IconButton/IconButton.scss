@@ -3,13 +3,8 @@
     border: none;
     cursor: pointer;
     font-size: 20px;
-}
-
-.icon_btn:focus{ 
-    border: none;
-    outline: none;
-}
-
-.spacing_icons{
-    margin: 0 1em 0 1em;
+    &:focus{ 
+        border: none;
+        outline: none;
+    }
 }

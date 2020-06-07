@@ -1,0 +1,26 @@
+.chat_container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto auto 10vh;
+  .chat_container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5cafb5;
+    padding: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    height: 2vh;
+  }
+  .chat_messaging_container {
+    padding: 2em;
+    overflow: auto;
+    .chat_start_heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+  }
+}
