@@ -1,10 +1,12 @@
+@import '../../scss/variables';
+
 .chat_message {
   display: flex;
   margin-bottom: 2em;
   .chat_bubble {
     position: relative;
     display: inline-block;
-    background-color: #f0f3f9;
+    background-color: $chatBubbleReceiver;
     padding: 1em;
     border-radius: 10px;
     margin-left: 1em;
@@ -15,7 +17,7 @@
       left: -1em;
       bottom: 0;
       border: 0 solid transparent;
-      border-top: 9px solid #f0f3f9;
+      border-top: 9px solid $chatBubbleReceiver;
       border-radius: 0 20px 0;
       width: 15px;
       height: 30px;
@@ -47,7 +49,7 @@
   .status_container {
     background-color: white;
     padding: 0.5em 2em;
-    color: #e88282;
+    color: $dangerColor;
     display: inline-block;
     border-radius: 10px;
   }
@@ -62,7 +64,7 @@
   &.sender {
     justify-content: flex-end;
     .chat_bubble {
-      background-color: #e6f2f2;
+      background-color: $chatBubbleSender;
       &::before {
         content: "";
         position: absolute;
@@ -71,7 +73,7 @@
         bottom: 0;
         border-radius: 20px 0 20px;
         transform: rotate(225deg);
-        border-top: 9px solid #e6f2f2;
+        border-top: 9px solid $chatBubbleSender;
       }
     }
   }

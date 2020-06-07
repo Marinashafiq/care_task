@@ -1,3 +1,5 @@
+@import '../../scss/variables';
+
 .chat_container {
   display: grid;
   height: 100vh;
@@ -6,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5cafb5;
+    background-color: $primaryColor;
     padding: 1.5em;
     padding-left: 1em;
     padding-right: 1em;

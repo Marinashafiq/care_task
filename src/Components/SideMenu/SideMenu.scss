@@ -1,6 +1,8 @@
+@import '../../scss/variables';
+
 .side_menu {
   height: 100vh;
-  background-color: #5cafb5;
+  background-color: $primaryColor;
   .logo_container {
     text-align: center;
     .logo {
@@ -19,7 +21,7 @@
       margin-top: 1em;
       &:hover,
       &.active {
-        background-color: #79c4ca;
+        background-color: $lightPrimaryColor;
       }
       &:last-child {
         position: absolute;
