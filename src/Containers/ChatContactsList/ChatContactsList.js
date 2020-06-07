@@ -11,7 +11,6 @@ export default class ChatContactsList extends Component {
       return <ChatContactItem key={index} chatContactData={item} />;
     });
   };
-
   render() {
     return (
       <div className="contact_list">

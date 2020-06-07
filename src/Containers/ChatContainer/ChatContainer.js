@@ -16,7 +16,6 @@ export default class ChatContainer extends Component {
       return <ChatBubble key={index} chatMessage={message} />;
     });
   };
-
   render() {
     return (
       <div className="chat_container">
