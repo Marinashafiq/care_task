@@ -4,22 +4,22 @@ import { faClock, faListAlt } from "@fortawesome/free-regular-svg-icons";
 import { faCheck, faHistory } from "@fortawesome/free-solid-svg-icons";
 import "./ChatBubble.css";
 // Each chat bubble for sender & receiver with different kinds of bubbles type
-export const ChatBubble = ({ chatMessage }) => {
+export const ChatBubble = ({ chatMessageContent }) => {
   const renderHistory = () => {
     return (
       <>
-        {chatMessage.reminder_info ? (
+        {chatMessageContent.reminder_info ? (
           <div className="reminder_actions_info">
             <div className="spacing">
               <p>
-                <em>{chatMessage.reminder_info.name}</em>
+                <em>{chatMessageContent.reminder_info.name}</em>
               </p>
               <small>
-                <em>{chatMessage.reminder_info.date}</em>
+                <em>{chatMessageContent.reminder_info.date}</em>
               </small>
             </div>
             <img
-              src={chatMessage.reminder_info.image_url}
+              src={chatMessageContent.reminder_info.image_url}
               className="user_profile"
               alt="profile"
             />
@@ -27,7 +27,7 @@ export const ChatBubble = ({ chatMessage }) => {
         ) : (
           <div>
             <FontAwesomeIcon icon={faHistory} color="#5cafb5" />
-            <span className="spacing">{chatMessage.action}</span>
+            <span className="spacing">{chatMessageContent.action}</span>
           </div>
         )}
       </>
@@ -56,8 +56,8 @@ export const ChatBubble = ({ chatMessage }) => {
   const renderReminderBubble = () => {
     return (
       <>
-        <h5>{chatMessage.reminder_title}</h5>
-        {chatMessage.reminder_list.map((item, index) => {
+        <h5>{chatMessageContent.reminder_title}</h5>
+        {chatMessageContent.reminder_list.map((item, index) => {
           return (
             <div key={index} className="reminder_item">
               <FontAwesomeIcon
@@ -72,7 +72,7 @@ export const ChatBubble = ({ chatMessage }) => {
           );
         })}
         <div className="reminder_actions">
-          {renderReminderStatus(chatMessage.status)}
+          {renderReminderStatus(chatMessageContent.status)}
           {renderHistory()}
         </div>
       </>
@@ -80,32 +80,19 @@ export const ChatBubble = ({ chatMessage }) => {
   };
 
   return (
-    <div className={`chat_message ${chatMessage.isSender && "sender"}`}>
-      {chatMessage.isSender === false && (
-        <img
-          src={chatMessage.image_url}
-          className="user_profile"
-          alt="profile"
-        />
-      )}
+    <>
       <div className="message_container">
         <div className="chat_bubble">
-          {chatMessage.is_reminder
+          {/* show remider bubble or just simple chat bubble */}
+          {chatMessageContent.is_reminder
             ? renderReminderBubble()
-            : chatMessage.message}
+            : chatMessageContent.message}
         </div>
         <div className="message_info">
-          <small>{chatMessage.name}</small>
-          <small>{chatMessage.time}</small>
+          <small>{chatMessageContent.name}</small>
+          <small>{chatMessageContent.time}</small>
         </div>
       </div>
-      {chatMessage.isSender && (
-        <img
-          src={chatMessage.image_url}
-          className="user_profile"
-          alt="profile"
-        />
-      )}
-    </div>
+    </>
   );
 };

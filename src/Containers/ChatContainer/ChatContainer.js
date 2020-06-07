@@ -6,14 +6,14 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 import { ChatActionBar } from "../../Components/ChatActionBar/ChatActionBar";
-import { ChatBubble } from "../../Components/ChatBubble/ChatBubble";
 import { IconButton } from "../../Components/Controls/IconButton/IconButton";
 import { chatMessages } from "../../utlis/shared";
 import "./ChatContainer.css";
+import { ChatMessage } from "../../Components/ChatMessage/ChatMessage";
 export default class ChatContainer extends Component {
   renderMessages = () => {
     return chatMessages.map((message, index) => {
-      return <ChatBubble key={index} chatMessage={message} />;
+      return <ChatMessage key={index} chatMessage={message} />;
     });
   };
   render() {
